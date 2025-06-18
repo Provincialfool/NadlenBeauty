@@ -157,15 +157,15 @@
 
   /* ===== HERO СЕКЦИЯ ===== */
   .hero {
-    height: 100vh;
-    min-height: 600px;
+    height: 70vh;
+    min-height: 500px;
     margin-top: 80px;
   }
 
   .hero-content {
     margin: 0 15px;
-    padding: 40px 25px;
-    border-radius: 20px;
+    padding: 30px 20px;
+    border-radius: 15px;
     max-width: none;
     animation: mobileHeroAppear 1.5s ease-out;
   }
@@ -182,22 +182,22 @@
   }
 
   .hero-content h1 {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .hero-content p {
-    font-size: 16px;
-    margin-bottom: 15px;
-    line-height: 1.6;
+    font-size: 15px;
+    margin-bottom: 12px;
+    line-height: 1.5;
   }
 
   .hero-content .cta-button {
     width: 100%;
-    padding: 18px 25px;
-    font-size: 16px;
-    margin-top: 25px;
+    padding: 16px 20px;
+    font-size: 15px;
+    margin-top: 20px;
   }
 
   /* ===== СЕКЦИЯ "ОБО МНЕ" ===== */
@@ -251,37 +251,72 @@
   }
 
   .price-table {
-    margin: 0 -15px;
+    margin: 0;
+    overflow-x: hidden;
   }
 
   .price-table table {
-    margin: 0 15px 25px;
-    font-size: 14px;
+    margin: 0 0 25px;
+    width: 100%;
+    font-size: 12px;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .price-table thead,
+  .price-table tbody,
+  .price-table tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
   }
 
   .price-table th {
-    padding: 15px 12px;
-    font-size: 12px;
+    padding: 12px 8px;
+    font-size: 11px;
     text-align: center;
   }
 
+  .price-table th:first-child {
+    width: 50%;
+  }
+
+  .price-table th:nth-child(2) {
+    width: 25%;
+  }
+
+  .price-table th:last-child {
+    width: 25%;
+  }
+
   .price-table td {
-    padding: 15px 12px;
-    font-size: 13px;
-    line-height: 1.4;
+    padding: 12px 8px;
+    font-size: 11px;
+    line-height: 1.3;
+    word-wrap: break-word;
+    white-space: normal;
   }
 
   .price-table td:first-child {
     font-weight: 500;
+    width: 50%;
+  }
+
+  .price-table td:nth-child(2) {
+    width: 25%;
+    text-align: center;
+    font-size: 10px;
   }
 
   .price-table td:last-child {
     font-weight: 600;
     color: #D0305A;
     text-align: right;
+    width: 25%;
   }
 
   /* ===== ОТЗЫВЫ ===== */
@@ -504,21 +539,34 @@
 
 /* Для очень маленьких экранов */
 @media (max-width: 480px) {
+  .hero {
+    height: 60vh;
+    min-height: 450px;
+  }
+
+  .hero-content {
+    padding: 25px 15px;
+  }
+
   .hero-content h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
   
   .hero-content p {
-    font-size: 15px;
+    font-size: 14px;
   }
   
   .price-table table {
-    font-size: 12px;
+    font-size: 10px;
   }
   
   .price-table th,
   .price-table td {
-    padding: 12px 8px;
+    padding: 10px 6px;
+  }
+
+  .price-table td:first-child {
+    font-size: 10px;
   }
   
   .review-slider {
