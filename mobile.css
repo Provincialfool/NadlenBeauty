@@ -17,16 +17,23 @@
 
   /* ===== ШАПКА ===== */
   .header {
-    padding: 8px 0;
+    padding: 12px 0;
     background: linear-gradient(135deg, #C5D669, #E2EEDA);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
   }
 
   .header-container {
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
     padding: 10px 15px;
-    gap: 15px;
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
   }
 
   /* Верхняя строка: лого и гамбургер */
@@ -75,12 +82,16 @@
   /* Навигация */
   nav {
     display: none;
-    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 15px;
+    right: 15px;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     animation: slideDown 0.3s ease-out;
+    z-index: 999;
   }
 
   @keyframes slideDown {
@@ -129,37 +140,16 @@
     transform: translateX(5px);
   }
 
-  /* Контактная кнопка */
+  /* Скрываем контактную кнопку в мобильной версии */
   .header-contact {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .phone-button {
-    width: 100%;
-    max-width: 280px;
-    justify-content: center;
-    padding: 15px 25px;
-    font-size: 16px;
-    border-radius: 25px;
-    background: linear-gradient(135deg, #D0305A, #E66C9B);
-    box-shadow: 0 8px 25px rgba(208, 48, 90, 0.3);
-  }
-
-  .phone-button .phone-text {
-    display: inline;
-  }
-
-  .phone-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 35px rgba(208, 48, 90, 0.4);
+    display: none;
   }
 
   /* ===== HERO СЕКЦИЯ ===== */
   .hero {
     height: 70vh;
     min-height: 500px;
-    margin-top: 80px;
+    margin-top: 100px;
   }
 
   .hero-content {
@@ -542,6 +532,7 @@
   .hero {
     height: 60vh;
     min-height: 450px;
+    margin-top: 90px;
   }
 
   .hero-content {
