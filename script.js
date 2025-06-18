@@ -74,3 +74,35 @@ document.querySelectorAll('.price-table table').forEach((table, index) => {
     observer.observe(table);
   }, index * 200);
 });
+
+function startParticles() {
+  // Проверяем поддержку reduce motion
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (prefersReducedMotion) {
+    // Отключаем анимации для пользователей с ограниченными возможностями
+    document.querySelectorAll('.particle').forEach(particle => {
+      particle.style.animation = 'none';
+    });
+    return;
+  }
+
+  // Инициализация анимаций частиц
+  const particles = document.querySelectorAll('.particle');
+  particles.forEach((particle, index) => {
+    particle.style.animationDelay = `${index * 2.5}s`;
+  });
+
+  // Паузим анимации когда вкладка неактивна для экономии ресурсов
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      particles.forEach(particle => {
+        particle.style.animationPlayState = 'paused';
+      });
+    } else {
+      particles.forEach(particle => {
+        particle.style.animationPlayState = 'running';
+      });
+    }
+  });
+}
