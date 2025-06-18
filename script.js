@@ -47,3 +47,30 @@ faqItems.forEach(item => {
     item.classList.toggle('active');
   });
 });
+
+
+// Анимации появления элементов при прокрутке
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-in');
+    }
+  });
+}, observerOptions);
+
+// Наблюдаем за элементами для анимации
+document.querySelectorAll('.about, .services, .reviews, .contacts, .faq').forEach(el => {
+  observer.observe(el);
+});
+
+// Плавная анимация для таблиц
+document.querySelectorAll('.price-table table').forEach((table, index) => {
+  setTimeout(() => {
+    observer.observe(table);
+  }, index * 200);
+});
