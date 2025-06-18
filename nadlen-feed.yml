@@ -1,5 +1,6 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2025-03-07 14:22">
+<yml_catalog date="2025-06-18 15:50">
   <shop>
     <name>Nadlen Studio</name>
     <company>Nadlen Studio</company>
@@ -8,99 +9,327 @@
       <currency id="RUB" rate="1"/>
     </currencies>
     <categories>
-      <category id="1">Уход за лицом</category>
+      <category id="1">Чистка лица</category>
       <category id="2">Маски</category>
       <category id="3">Пилинги</category>
+      <category id="4">Аппаратные методики</category>
+      <category id="5">Инъекционные процедуры</category>
+      <category id="6">Контурная пластика и нити</category>
+      <category id="7">Липолитики</category>
+      <category id="8">Массаж</category>
+      <category id="9">Удаление новообразований</category>
+      <category id="10">Прочие услуги</category>
+      <category id="11">Подарочные сертификаты</category>
     </categories>
     <offers>
-      <!-- Уход за лицом -->
+      <!-- Чистка лица -->
       <offer id="1" available="true">
         <url>https://nadlen-studio.ru</url>
-        <price>1800</price>
+        <price>1900</price>
         <currencyId>RUB</currencyId>
         <categoryId>1</categoryId>
         <name>Комбинированная чистка лица</name>
-        <description>Продолжительность: 90 мин</description>
-      </offer>
-      <offer id="2" available="true">
-        <url>https://nadlen-studio.ru</url>
-        <price>1000</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>1</categoryId>
-        <name>Ультразвуковая чистка лица</name>
-        <description>Продолжительность: 40 мин</description>
-      </offer>
-      <offer id="3" available="true">
-        <url>https://nadlen-studio.ru</url>
-        <price>1600</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>1</categoryId>
-        <name>Механическая чистка лица</name>
-        <description>Продолжительность: 30 мин</description>
+        <description>Продолжительность: 2 ч</description>
       </offer>
 
       <!-- Маски -->
-      <offer id="4" available="true">
+      <offer id="2" available="true">
         <url>https://nadlen-studio.ru</url>
         <price>600</price>
         <currencyId>RUB</currencyId>
         <categoryId>2</categoryId>
-        <name>Альгинатная маска</name>
+        <name>Альгинатная маска для лица</name>
         <description>Продолжительность: 30 мин</description>
       </offer>
-      <offer id="5" available="true">
+      <offer id="3" available="true">
         <url>https://nadlen-studio.ru</url>
-        <price>350</price>
+        <price>850</price>
         <currencyId>RUB</currencyId>
         <categoryId>2</categoryId>
-        <name>Химическая маска</name>
-        <description>Продолжительность: 60 мин</description>
-      </offer>
-      <offer id="6" available="true">
-        <url>https://nadlen-studio.ru</url>
-        <price>600</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>2</categoryId>
-        <name>Маска с глиной под токи кожи</name>
-        <description>Продолжительность: 15 мин</description>
-      </offer>
-      <offer id="7" available="true">
-        <url>https://nadlen-studio.ru</url>
-        <price>800</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>2</categoryId>
-        <name>Пилинговая маска</name>
-        <description>Продолжительность: 20 мин</description>
+        <name>Гипсовая маска</name>
+        <description>Продолжительность: 45 мин</description>
       </offer>
 
       <!-- Пилинги -->
-      <offer id="8" available="true">
+      <offer id="4" available="true">
         <url>https://nadlen-studio.ru</url>
         <price>1500</price>
         <currencyId>RUB</currencyId>
         <categoryId>3</categoryId>
-        <name>Кислотный пилинг</name>
+        <name>Химический пилинг кожи</name>
+        <description>Продолжительность: 45 мин, от 1500 ₽</description>
       </offer>
-      <offer id="9" available="true">
+      <offer id="5" available="true">
         <url>https://nadlen-studio.ru</url>
-        <price>450</price>
+        <price>2500</price>
         <currencyId>RUB</currencyId>
         <categoryId>3</categoryId>
-        <name>Энзимный пилинг</name>
+        <name>TCA-пилинг лица</name>
+        <description>Продолжительность: 30 мин</description>
+      </offer>
+      <offer id="6" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>1000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>3</categoryId>
+        <name>Пилинг лица молочной кислотой</name>
+        <description>Продолжительность: 45 мин</description>
+      </offer>
+
+      <!-- Аппаратные методики -->
+      <offer id="7" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>1100</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>4</categoryId>
+        <name>Микротоковая терапия</name>
+        <description>Продолжительность: 30 мин</description>
+      </offer>
+      <offer id="8" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>850</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>4</categoryId>
+        <name>Фарфоровая куколка (фонофорез + препарат)</name>
+        <description>Продолжительность: 45 мин</description>
+      </offer>
+
+      <!-- Инъекционные процедуры -->
+      <offer id="9" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>2900</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>5</categoryId>
+        <name>Плазмолифтинг</name>
+        <description>Продолжительность: 1 ч 30 мин</description>
       </offer>
       <offer id="10" available="true">
         <url>https://nadlen-studio.ru</url>
-        <price>1500</price>
+        <price>2700</price>
         <currencyId>RUB</currencyId>
-        <categoryId>3</categoryId>
-        <name>Миндальный кислотный пилинг</name>
+        <categoryId>5</categoryId>
+        <name>Мезотерапия</name>
+        <description>Продолжительность: 1 ч 30 мин</description>
       </offer>
       <offer id="11" available="true">
         <url>https://nadlen-studio.ru</url>
-        <price>1500</price>
+        <price>2900</price>
         <currencyId>RUB</currencyId>
-        <categoryId>3</categoryId>
-        <name>Молочный кислотный пилинг</name>
+        <categoryId>5</categoryId>
+        <name>Мезотерапия кожи головы</name>
+        <description>Продолжительность: 1 ч 30 мин, от 2900 ₽</description>
+      </offer>
+      <offer id="12" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>2900</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>5</categoryId>
+        <name>Биоревитализация</name>
+        <description>Продолжительность: 1 ч 30 мин, от 2900 ₽</description>
+      </offer>
+      <offer id="13" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>3600</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>5</categoryId>
+        <name>Нейромезолифтинг (Коктейли Монако)</name>
+        <description>Продолжительность: 1 ч 30 мин, от 3600 ₽</description>
+      </offer>
+      <offer id="14" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>6800</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>5</categoryId>
+        <name>Инъекции филлеров с гиалуроновой кислотой</name>
+        <description>Продолжительность: 1 ч 30 мин, от 6800 ₽</description>
+      </offer>
+      <offer id="15" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>170</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>5</categoryId>
+        <name>Ботулинотерапия</name>
+        <description>Продолжительность: 45 мин, 170 ₽ за единицу</description>
+      </offer>
+      <offer id="16" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>350</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>5</categoryId>
+        <name>Озонотерапия</name>
+        <description>Продолжительность: 15 мин</description>
+      </offer>
+      <offer id="17" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>22000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>5</categoryId>
+        <name>Полимолочная кислота</name>
+        <description>Продолжительность: 1 ч 30 мин</description>
+      </offer>
+      <offer id="18" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>25000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>5</categoryId>
+        <name>Полимолочная кислота (лицо + шея)</name>
+        <description>Продолжительность: 1 ч 45 мин</description>
+      </offer>
+
+      <!-- Контурная пластика и нити -->
+      <offer id="19" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>8000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>6</categoryId>
+        <name>Контурная пластика губ</name>
+        <description>Продолжительность: 1 ч 30 мин, от 8000 ₽</description>
+      </offer>
+      <offer id="20" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>8000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>6</categoryId>
+        <name>Контурная пластика лица</name>
+        <description>Продолжительность: 1 ч 30 мин, от 8000 ₽</description>
+      </offer>
+      <offer id="21" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>10000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>6</categoryId>
+        <name>Интимная контурная пластика (жен.)</name>
+        <description>Продолжительность: 2 ч</description>
+      </offer>
+      <offer id="22" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>500</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>6</categoryId>
+        <name>Нитьевой лифтинг лица и тела</name>
+        <description>Продолжительность: 2 ч 30 мин, от 500 ₽ за единицу</description>
+      </offer>
+      <offer id="23" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>8300</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>6</categoryId>
+        <name>Нитеевой лифтинг лица и шеи</name>
+        <description>Продолжительность: 2 ч, от 8300 ₽</description>
+      </offer>
+      <offer id="24" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>8300</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>6</categoryId>
+        <name>Заполнение носогубных складок нитями</name>
+        <description>Продолжительность: 1 ч 45 мин</description>
+      </offer>
+
+      <!-- Липолитики -->
+      <offer id="25" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>1000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>7</categoryId>
+        <name>Липолитики тела и лица</name>
+        <description>Продолжительность: 45 мин, от 1000 ₽</description>
+      </offer>
+
+      <!-- Массаж -->
+      <offer id="26" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>1000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>8</categoryId>
+        <name>Классический массаж лица</name>
+        <description>Продолжительность: 45 мин</description>
+      </offer>
+      <offer id="27" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>1000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>8</categoryId>
+        <name>Массаж (зональный)</name>
+        <description>Продолжительность: 45 мин, от 1000 ₽ за час</description>
+      </offer>
+      <offer id="28" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>1600</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>8</categoryId>
+        <name>Экспресс перед праздником</name>
+        <description>Продолжительность: 1 ч 30 мин</description>
+      </offer>
+
+      <!-- Удаление новообразований -->
+      <offer id="29" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>300</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>9</categoryId>
+        <name>Удаление новообразований</name>
+        <description>Продолжительность: 1 ч 30 мин, от 300 ₽</description>
+      </offer>
+      <offer id="30" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>300</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>9</categoryId>
+        <name>Удаление папиллом, невусов, бородавок</name>
+        <description>Продолжительность: 1 ч 15 мин, от 300 ₽ за единицу</description>
+      </offer>
+      <offer id="31" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>600</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>9</categoryId>
+        <name>Удаление родинок и папиллом</name>
+        <description>Продолжительность: 30 мин</description>
+      </offer>
+
+      <!-- Прочие услуги -->
+      <offer id="32" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>1300</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>10</categoryId>
+        <name>Прокол ушей с обезболиванием (игла)</name>
+        <description>Продолжительность: 45 мин</description>
+      </offer>
+      <offer id="33" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>2900</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>10</categoryId>
+        <name>Капельницы Золушка</name>
+        <description>Продолжительность: 45 мин</description>
+      </offer>
+
+      <!-- Подарочные сертификаты -->
+      <offer id="34" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>2000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>11</categoryId>
+        <name>Подарочный сертификат 2000 ₽</name>
+        <description>Номинал сертификата: 2000 ₽</description>
+      </offer>
+      <offer id="35" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>5000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>11</categoryId>
+        <name>Подарочный сертификат 5000 ₽</name>
+        <description>Номинал сертификата: 5000 ₽</description>
+      </offer>
+      <offer id="36" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>10000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>11</categoryId>
+        <name>Подарочный сертификат 10000 ₽</name>
+        <description>Номинал сертификата: 10000 ₽</description>
       </offer>
     </offers>
   </shop>
