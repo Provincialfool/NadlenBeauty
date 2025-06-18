@@ -183,8 +183,8 @@ nav a:hover {
 /* Геройский раздел */
 .hero {
   position: relative;
-  height: 85vh;
-  min-height: 600px;
+  height: 100vh;
+  min-height: 700px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -200,8 +200,14 @@ nav a:hover {
   width: 100%;
   height: 100%;
   background: url('hero-bg.jpg') center/cover no-repeat;
-  filter: blur(1px);
+  filter: blur(2px) brightness(0.7);
   z-index: 1;
+  animation: slowZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes slowZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
 }
 
 .hero::after {
@@ -211,8 +217,71 @@ nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(208, 48, 90, 0.1), rgba(255, 255, 255, 0.4));
+  background: linear-gradient(135deg, rgba(208, 48, 90, 0.3), rgba(197, 214, 105, 0.2), rgba(255, 255, 255, 0.1));
   z-index: 2;
+}
+
+/* Floating particles effect */
+.hero-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.particle:nth-child(1) {
+  width: 6px;
+  height: 6px;
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.particle:nth-child(2) {
+  width: 4px;
+  height: 4px;
+  top: 60%;
+  left: 80%;
+  animation-delay: 2s;
+}
+
+.particle:nth-child(3) {
+  width: 8px;
+  height: 8px;
+  top: 80%;
+  left: 20%;
+  animation-delay: 4s;
+}
+
+.particle:nth-child(4) {
+  width: 5px;
+  height: 5px;
+  top: 30%;
+  left: 70%;
+  animation-delay: 1s;
+}
+
+.particle:nth-child(5) {
+  width: 7px;
+  height: 7px;
+  top: 70%;
+  left: 50%;
+  animation-delay: 3s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.7; }
+  50% { transform: translateY(-20px) rotate(180deg); opacity: 1; }
 }
 
 .hero-content {
@@ -220,13 +289,114 @@ nav a:hover {
   z-index: 3;
   text-align: center;
   color: #212121;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 50px 40px;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  max-width: 800px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 60px 50px;
+  border-radius: 25px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  max-width: 900px;
+  animation: heroContentAppear 1.5s ease-out;
+  transform-style: preserve-3d;
+}
+
+@keyframes heroContentAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.hero-content::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #D0305A, #E66C9B, #C5D669, #D0305A);
+  border-radius: 27px;
+  z-index: -1;
+  animation: borderGlow 4s ease-in-out infinite;
+}
+
+@keyframes borderGlow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #D0305A, #E66C9B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: titlePulse 3s ease-in-out infinite;
+}
+
+@keyframes titlePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  animation: fadeInUp 1s ease-out 0.5s both;
+}
+
+.hero-content p:last-of-type {
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content .cta-button {
+  margin-top: 30px;
+  font-size: 18px;
+  padding: 18px 40px;
+  animation: fadeInUp 1s ease-out 1.2s both, buttonFloat 3s ease-in-out 2s infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes buttonFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+.hero-content .cta-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.hero-content .cta-button:hover::after {
+  width: 300px;
+  height: 300px;
 }
 
 /* Обо мне */
