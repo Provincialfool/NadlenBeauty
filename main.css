@@ -411,6 +411,10 @@ nav a:hover {
   overflow: hidden;
 }
 
+.review-slide.active {
+  display: block;
+}
+
 .review-slide::before {
   content: '"';
   position: absolute;
