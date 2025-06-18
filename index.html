@@ -1,278 +1,303 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Надежда - Профессиональный психолог</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="mobile.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nadlen — студия косметологии в Орле. Услуги профессионального косметолога Надежды: плазмолифтинг, биоревитализация, мезотерапия, чистка лица, капельницы «Золушка». Запишитесь онлайн и получите скидку 15%!">
+  <meta name="keywords" content="косметолог Орел, косметология Орел, студия красоты Орел, плазмолифтинг Орел, биоревитализация Орел, мезотерапия Орел, чистка лица Орел, Надежда косметолог, услуги косметолога Орел">
+  <meta name="author" content="Nadlen Studio">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Nadlen — Студия косметологии в Орле">
+  <meta property="og:description" content="Профессиональные услуги косметолога в Орле: плазмолифтинг, биоревитализация, чистка лица и многое другое. Запишитесь сейчас и получите скидку 15%!">
+  <meta property="og:url" content="https://nadlenbeauty.ru/">
+  <meta property="og:image" content="https://nadlenbeauty.ru/hero-bg.jpg">
+  <title>Nadlen — Косметолог в Орле | Услуги косметологии</title>
+
+  <!-- Preload для ускорения загрузки -->
+  <link rel="preload" href="hero-bg.jpg" as="image">
+  <link rel="preload" href="logo.png" as="image">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" as="style">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
 </head>
 <body>
-    <!-- Прелоадер -->
-    <div id="preloader">
-        <div class="spinner"></div>
+  <!-- Прелоадер -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Шапка сайта -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="logo.png" alt="Логотип Nadlen - Косметолог Орел">
+        <div>
+          <h1>Nadlen</h1>
+          <p>Студия красоты</p>
+        </div>
+      </div>
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+      <nav>
+        <ul>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="header-contact">
+  <a href="https://wa.me/79803664600" class="cta-button phone-button">
+    <i class="fas fa-phone"></i> <span class="phone-text">+7 980 366 46 00</span>
+  </a>
+</div>
     </div>
+  </header>
 
-    <!-- Шапка -->
-    <header class="header">
-        <div class="container">
-            <div class="header-container">
-                <div class="logo">
-                    <img src="logo.png" alt="Логотип Надежда">
-                    <div>
-                        <h1>Надежда</h1>
-                        <p>Психолог</p>
-                    </div>
-                </div>
-                
-                <div class="hamburger">
-                    <i class="fas fa-bars"></i>
-                </div>
-                
-                <nav>
-                    <ul>
-                        <li><a href="#about">Обо мне</a></li>
-                        <li><a href="#services">Услуги</a></li>
-                        <li><a href="#reviews">Отзывы</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
-                    </ul>
-                </nav>
-                
-                <div class="header-contact">
-                    <a href="tel:+79123456789" class="phone-button">
-                        <i class="fas fa-phone"></i>
-                        <span class="phone-text">+7 (912) 345-67-89</span>
-                    </a>
-                </div>
-            </div>
+  <!-- Геройский раздел -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Красота начинается здесь!</h1>
+      <p>Профессиональная косметология в Орле от Надежды.<br><strong>Запишись сейчас и получи скидку 15% на первую процедуру!</strong></p>
+      <p>Плазмолифтинг, биоревитализация, чистка лица и многое другое в уютной студии.</p>
+      <a href="https://wa.me/79803664600" class="cta-button">Записаться на скидку</a>
+    </div>
+  </section>
+
+  <!-- Раздел "Обо мне" -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Обо мне</h2>
+      <div class="about-content">
+        <img src="nadezhda.jpg" alt="Надежда - косметолог в Орле" class="about-image">
+        <div class="about-text">
+          <p>Привет! Меня зовут <span class="highlight">Надежда</span>, и я рада приветствовать тебя в своей <span class="highlight">студии косметологии в Орле</span>!</p>
+          <br>
+          <p>Я — дипломированный косметолог с медицинским образованием. Мои сертификаты подтверждают высокий уровень профессионализма.</p>
+          <br>
+          <p>Работаю в современной студии с передовым оборудованием. Использую только сертифицированные препараты из Испании, Швейцарии и Южной Кореи. Моя цель — подарить тебе <span class="highlight">красоту</span> и уверенность!</p>
         </div>
-    </header>
+      </div>
+    </div>
+  </section>
 
-    <!-- Геройский раздел -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Найдите гармонию в себе</h1>
-                <p>Профессиональная психологическая помощь</p>
-                <p><strong>Индивидуальные консультации • Семейная терапия • Групповые сессии</strong></p>
-                <a href="#contacts" class="cta-button">Записаться на консультацию</a>
-            </div>
+  <!-- Раздел "Услуги" -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Услуги косметолога и цены</h2>
+      <div class="price-table">
+        <h3>Уход за лицом</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Услуга</th>
+              <th>Время</th>
+              <th>Стоимость</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Комбинированная чистка лица</td><td>2 ч</td><td>1 800 ₽</td></tr>
+            <tr><td>Механическая чистка лица</td><td>1 ч 45 мин</td><td>1 900 ₽</td></tr>
+            <tr><td>Ультразвуковая чистка лица</td><td>40 мин</td><td>1 000 ₽</td></tr>
+            <tr><td>Плазмолифтинг (лицо)</td><td>1 ч 30 мин</td><td>2 900 ₽</td></tr>
+            <tr><td>Мезотерапия (лицо)</td><td>1 ч 30 мин</td><td>2 700 ₽</td></tr>
+            <tr><td>Мезотерапия (кожа головы)</td><td>1 ч 30 мин</td><td>от 2 900 ₽</td></tr>
+            <tr><td>Биоревитализация</td><td>1 ч 30 мин</td><td>от 2 900 ₽</td></tr>
+            <tr><td>Контурная пластика лица</td><td>1 ч 30 мин</td><td>от 8 000 ₽</td></tr>
+            <tr><td>Контурная пластика губ</td><td>1 ч 30 мин</td><td>от 8 000 ₽</td></tr>
+            <tr><td>Коктейльные/Желтые/ТСА пилинги</td><td>45 мин</td><td>от 1 500 ₽</td></tr>
+            <tr><td>Интимный пилинг</td><td>45 мин</td><td>1 300 ₽</td></tr>
+            <tr><td>Альгинатная маска</td><td>30 мин</td><td>600 ₽</td></tr>
+            <tr><td>Классический массаж лица</td><td>45 мин</td><td>1 000 ₽</td></tr>
+            <tr><td>Буккальный массаж</td><td>45 мин</td><td>1 000 ₽</td></tr>
+            <tr><td>Микротоковая терапия</td><td>30 мин</td><td>1 100 ₽</td></tr>
+            <tr><td>«Экспресс» перед праздником</td><td>1 ч 40 мин</td><td>1 600 ₽</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Уход за телом</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Услуга</th>
+              <th>Время</th>
+              <th>Стоимость</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Антицеллюлитный массаж</td><td>45 мин</td><td>1 500 ₽</td></tr>
+            <tr><td>Липолитики (тело/лицо)</td><td>45 мин</td><td>от 1 000 ₽</td></tr>
+            <tr><td>Прессотерапия</td><td>30 мин</td><td>500 ₽</td></tr>
+            <tr><td>Вакуумная кавитация</td><td>30 мин</td><td>600 ₽</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Капельницы красоты</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Услуга</th>
+              <th>Время</th>
+              <th>Стоимость</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Капельница «Золушка»</td><td>45 мин</td><td>2 900 ₽</td></tr>
+            <tr><td>Капельница «После праздника»</td><td>45 мин</td><td>2 900 ₽</td></tr>
+            <tr><td>Капельница «Энергия+»</td><td>45 мин</td><td>2 900 ₽</td></tr>
+            <tr><td>Капельница «Иммунитет»</td><td>45 мин</td><td>2 900 ₽</td></tr>
+            <tr><td>Капельница «Anti-Age»</td><td>45 мин</td><td>2 900 ₽</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Подарочные сертификаты</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Номинал</th>
+              <th>Формат</th>
+              <th>Стоимость</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2 000 ₽</td><td>10×15 см</td><td>2 000 ₽</td></tr>
+            <tr><td>3 000 ₽</td><td>10×15 см</td><td>3 000 ₽</td></tr>
+            <tr><td>5 000 ₽</td><td>10×15 см</td><td>5 000 ₽</td></tr>
+            <tr><td>10 000 ₽</td><td>10×15 см</td><td>10 000 ₽</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Раздел "Отзывы" -->
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <h2>Отзывы клиентов</h2>
+      <div class="review-slider">
+        <div class="review-slide active">
+          <p>«Надежда — настоящий профессионал! Кожа после чистки сияет, а студия очень уютная. Рекомендую всем в Орле!»</p>
+          <h4>Анна Осечкина</h4>
+          <span>28 апреля 2024</span>
         </div>
-    </section>
-
-    <!-- Обо мне -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>Обо мне</h2>
-            <div class="about-content">
-                <img src="nadezhda.jpg" alt="Надежда - Психолог" class="about-image">
-                <div class="about-text">
-                    <p>Меня зовут <span class="highlight">Надежда</span>, и я профессиональный психолог с более чем 10-летним опытом работы.</p>
-                    <p>Специализируюсь на работе с тревожными расстройствами, депрессией, семейными конфликтами и личностным ростом.</p>
-                    <p>Мой подход основан на <span class="highlight">когнитивно-поведенческой терапии</span> и гештальт-терапии. Каждый человек уникален, поэтому я подбираю индивидуальный подход для каждого клиента.</p>
-                    <p>Образование: МГУ им. М.В. Ломоносова, факультет психологии. Постоянно повышаю квалификацию, участвую в профессиональных конференциях и семинарах.</p>
-                </div>
-            </div>
+        <div class="review-slide">
+          <p>«Биоревитализация от Надежды — это чудо! Кожа упругая, а я счастлива. Вернусь ещё!»</p>
+          <h4>Елена Иванова</h4>
+          <span>2 ноября 2024</span>
         </div>
-    </section>
-
-    <!-- Услуги -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Услуги и цены</h2>
-            
-            <div class="price-table">
-                <h3>Индивидуальные консультации</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Услуга</th>
-                            <th>Длительность</th>
-                            <th>Цена</th>
-                            <th>Описание</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Первичная консультация</td>
-                            <td>60 мин</td>
-                            <td>3000 ₽</td>
-                            <td>Знакомство, диагностика, план работы</td>
-                        </tr>
-                        <tr>
-                            <td>Индивидуальная сессия</td>
-                            <td>50 мин</td>
-                            <td>2500 ₽</td>
-                            <td>Работа с личными запросами</td>
-                        </tr>
-                        <tr>
-                            <td>Онлайн консультация</td>
-                            <td>50 мин</td>
-                            <td>2000 ₽</td>
-                            <td>Удаленная работа по видеосвязи</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="price-table">
-                <h3>Семейная и парная терапия</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Услуга</th>
-                            <th>Длительность</th>
-                            <th>Цена</th>
-                            <th>Описание</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Семейная консультация</td>
-                            <td>60 мин</td>
-                            <td>4000 ₽</td>
-                            <td>Работа с семейными конфликтами</td>
-                        </tr>
-                        <tr>
-                            <td>Парная терапия</td>
-                            <td>60 мин</td>
-                            <td>3500 ₽</td>
-                            <td>Работа с отношениями в паре</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="price-table">
-                <h3>Групповые программы</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Услуга</th>
-                            <th>Длительность</th>
-                            <th>Цена</th>
-                            <th>Описание</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Группа по работе с тревогой</td>
-                            <td>90 мин</td>
-                            <td>1500 ₽</td>
-                            <td>Групповая работа с тревожными состояниями</td>
-                        </tr>
-                        <tr>
-                            <td>Тренинг личностного роста</td>
-                            <td>120 мин</td>
-                            <td>2000 ₽</td>
-                            <td>Развитие самосознания и навыков</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="review-slide">
+          <p>«Чистка лица у Надежды — обновление кожи на 100%. Профессионализм и забота на высоте!»</p>
+          <h4>Татьяна Николаева</h4>
+          <span>1 октября 2024</span>
         </div>
-    </section>
-
-    <!-- Отзывы -->
-    <section id="reviews" class="reviews">
-        <div class="container">
-            <h2>Отзывы клиентов</h2>
-            <div class="review-slider">
-                <div class="review-slide active">
-                    <p>"Работа с Надеждой помогла мне справиться с паническими атаками. Очень профессиональный и деликатный подход. Рекомендую!"</p>
-                    <cite>— Анна, 28 лет</cite>
-                </div>
-                
-                <div class="review-slide">
-                    <p>"Семейная терапия спасла наш брак. Надежда помогла нам найти общий язык и восстановить доверие друг к другу."</p>
-                    <cite>— Михаил и Елена</cite>
-                </div>
-                
-                <div class="review-slide">
-                    <p>"Благодаря работе с психологом я научилась лучше понимать себя и свои эмоции. Очень благодарна за поддержку!"</p>
-                    <cite>— Мария, 35 лет</cite>
-                </div>
-                
-                <div class="review-buttons">
-                    <button id="prevReview">‹</button>
-                    <button id="nextReview">›</button>
-                </div>
-            </div>
+        <div class="review-buttons">
+          <button id="prevReview"><i class="fas fa-chevron-left"></i></button>
+          <button id="nextReview"><i class="fas fa-chevron-right"></i></button>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="faq">
-        <div class="container">
-            <h2>Часто задаваемые вопросы</h2>
-            
-            <div class="faq-item">
-                <div class="faq-question">Как проходит первая консультация?</div>
-                <div class="faq-answer">
-                    <p>Первая встреча длится 60 минут. Мы знакомимся, обсуждаем ваш запрос, я провожу диагностику и мы составляем план дальнейшей работы. Это безопасное пространство, где вы можете открыто говорить о своих переживаниях.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">Сколько сессий потребуется?</div>
-                <div class="faq-answer">
-                    <p>Количество сессий индивидуально и зависит от сложности запроса. Обычно краткосрочная работа составляет 8-12 встреч, долгосрочная терапия может длиться год и более. Мы обсуждаем это на первой консультации.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">Возможны ли онлайн консультации?</div>
-                <div class="faq-answer">
-                    <p>Да, я провожу онлайн консультации через защищенные платформы видеосвязи. Эффективность онлайн терапии доказана исследованиями и практически не отличается от очных встреч.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">Конфиденциальность гарантирована?</div>
-                <div class="faq-answer">
-                    <p>Абсолютно. Все, что происходит на сессиях, остается строго конфиденциальным. Это основной принцип работы психолога, закрепленный в этическом кодексе.</p>
-                </div>
-            </div>
+  <!-- Раздел "Контакты" -->
+  <section id="contacts" class="contacts">
+    <div class="container">
+      <h2>Контакты</h2>
+      <p><strong><i class="fas fa-map-marker-alt"></i> Адрес:</strong> г. Орел, ул. Революции, 1</p>
+      <p><strong>Телефон:</strong> <a href="tel:+79803664600">+7 (980) 366-46-00</a></p>
+      <p><strong><i class="fab fa-whatsapp"></i> WhatsApp:</strong> <a href="https://wa.me/79803664600">Написать в WhatsApp</a></p>
+      <p><strong><i class="fab fa-telegram"></i> Telegram:</strong> <a href="https://t.me/nadlen_50">@nadlen_50</a></p>
+      <p><strong>График:</strong> ежедневно, по предварительной записи</p>
+      <a href="https://wa.me/79803664600" class="cta-button">Записаться онлайн</a>
+    </div>
+  </section>
+
+  <!-- Раздел "FAQ" -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2>Часто задаваемые вопросы</h2>
+      <div class="faq-item">
+        <div class="faq-question">Сколько времени занимает чистка лица?</div>
+        <div class="faq-answer">Комбинированная чистка — 2 часа, механическая — 1 час 45 минут, ультразвуковая — 40 минут.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Нужно ли готовиться к биоревитализации?</div>
+        <div class="faq-answer">За 3 дня избегайте солнца, скрабов и ретинола. Пейте больше воды.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Что такое капельница «Золушка» и какие у неё эффекты?</div>
+        <div class="faq-answer">
+          Капельница «Золушка» — это витаминный коктейль с антиоксидантами, который стимулирует выработку коллагена, улучшает тонус кожи, осветляет пигментацию и выводит токсины. Она помогает восстановить кожу, укрепить иммунитет и снизить утомляемость.
         </div>
-    </section>
-
-    <!-- Контакты -->
-    <section id="contacts" class="contacts">
-        <div class="container">
-            <h2>Контакты</h2>
-            <p><i class="fas fa-phone"></i> <a href="tel:+79123456789">+7 (912) 345-67-89</a></p>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:nadezhda@example.com">nadezhda@example.com</a></p>
-            <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Примерная, д. 10</p>
-            <p><i class="fas fa-clock"></i> Пн-Пт: 9:00-20:00, Сб: 10:00-16:00</p>
-            <br>
-            <a href="tel:+79123456789" class="cta-button">Позвонить сейчас</a>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Болезненна ли процедура плазмолифтинга?</div>
+        <div class="faq-answer">
+          Процедура может вызывать лёгкий дискомфорт, но перед сеансом на кожу наносится анестетик, что делает процесс практически безболезненным.
         </div>
-    </section>
-
-    <!-- Подвал -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-layout">
-                <p>&copy; 2024 Надежда - Психолог. Все права защищены.</p>
-                <div class="footer-social">
-                    <a href="#"><i class="fab fa-telegram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Сколько процедур интимного пилинга нужно для результата?</div>
+        <div class="faq-answer">
+          Для заметного осветления и омоложения кожи обычно требуется 2–4 процедуры с интервалом 10–12 дней. Точное количество зависит от типа кожи и желаемого результата.
         </div>
-    </footer>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Можно ли делать массаж лица после контурной пластики?</div>
+        <div class="faq-answer">
+          Нет, в течение 2 недель после контурной пластики лучше избегать массажа лица, чтобы не сместить введённый филлер.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Как подготовиться к антицеллюлитному массажу?</div>
+        <div class="faq-answer">
+          За день до массажа пейте больше воды, избегайте тяжёлой пищи и не наносите на кожу кремы или масла перед процедурой.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Для чего нужна микротоковая терапия?</div>
+        <div class="faq-answer">
+          Микротоки стимулируют мышцы лица, улучшают кровообращение, подтягивают кожу и уменьшают отёчность. Это отличный способ добиться лифтинг-эффекта без инъекций.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Как долго действует подарочный сертификат?</div>
+        <div class="faq-answer">
+          Подарочные сертификаты действительны в течение 6 месяцев с даты покупки. Уточните детали при записи.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Можно ли делать процедуры во время беременности?</div>
+        <div class="faq-answer">
+          Некоторые процедуры (например, агрессивные пилинги, инъекции) во время беременности противопоказаны. Однако лёгкие уходовые процедуры, такие как альгинатная маска, могут быть разрешены после консультации с врачом.
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container footer-layout">
+      <div class="footer-left">
+        <p>© 2025 Nadlen — Косметология в Орле</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://wa.me/79803664600" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://t.me/nadlen_50" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="https://vk.com/nadlen57" target="_blank"><i class="fab fa-vk"></i></a>
+      </div>
+      <div class="footer-right">
+        <p>Разработал <a href="https://EGORFOMIN.RU" target="_blank">EGORFOMIN.RU</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
