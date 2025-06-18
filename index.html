@@ -4,103 +4,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тестовый сайт</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .container {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            max-width: 500px;
-            width: 90%;
-        }
-        
-        h1 {
-            color: #4a5568;
-            margin-bottom: 1rem;
-            font-size: 2.5rem;
-        }
-        
-        p {
-            color: #718096;
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-        }
-        
-        .status {
-            background: #48bb78;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            display: inline-block;
-            margin-bottom: 1rem;
-            font-weight: bold;
-        }
-        
-        .info {
-            background: #f7fafc;
-            padding: 1rem;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
-            margin-top: 1rem;
-        }
-        
-        .time {
-            font-weight: bold;
-            color: #667eea;
-        }
-    </style>
+    <title>Надежда - Профессиональный психолог</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css">
 </head>
 <body>
-    <div class="container">
-        <div class="status">✅ Сервер работает</div>
-        <h1>Добро пожаловать!</h1>
-        <p>Ваш веб-сайт успешно запущен и готов к работе.</p>
-        
-        <div class="info">
-            <p><strong>Время запуска:</strong> <span class="time" id="time"></span></p>
-            <p><strong>Статус:</strong> Онлайн</p>
-        </div>
+    <!-- Прелоадер -->
+    <div id="preloader">
+        <div class="spinner"></div>
     </div>
 
-    <script>
-        // Отображение времени
-        function updateTime() {
-            const now = new Date();
-            document.getElementById('time').textContent = now.toLocaleString('ru-RU', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit',
-                second: '2-digit'
-            });
-        }
-        
-        updateTime();
-        setInterval(updateTime, 1000);
-        
-        // Проверка работы JavaScript
-        console.log('✅ JavaScript загружен и работает');
-        console.log('🌐 Сайт готов к использованию');
-    </script>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="logo.png" alt="Логотип Надежда">
+                    <div>
+                        <h1>Надежда</h1>
+                        <p>Психолог</p>
+                    </div>
+                </div>
+                
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#about">Обо мне</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-contact">
+                    <a href="tel:+79123456789" class="phone-button">
+                        <i class="fas fa-phone"></i>
+                        <span class="phone-text">+7 (912) 345-67-89</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Геройский раздел -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Найдите гармонию в себе</h1>
+                <p>Профессиональная психологическая помощь</p>
+                <p><strong>Индивидуальные консультации • Семейная терапия • Групповые сессии</strong></p>
+                <a href="#contacts" class="cta-button">Записаться на консультацию</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Обо мне</h2>
+            <div class="about-content">
+                <img src="nadezhda.jpg" alt="Надежда - Психолог" class="about-image">
+                <div class="about-text">
+                    <p>Меня зовут <span class="highlight">Надежда</span>, и я профессиональный психолог с более чем 10-летним опытом работы.</p>
+                    <p>Специализируюсь на работе с тревожными расстройствами, депрессией, семейными конфликтами и личностным ростом.</p>
+                    <p>Мой подход основан на <span class="highlight">когнитивно-поведенческой терапии</span> и гештальт-терапии. Каждый человек уникален, поэтому я подбираю индивидуальный подход для каждого клиента.</p>
+                    <p>Образование: МГУ им. М.В. Ломоносова, факультет психологии. Постоянно повышаю квалификацию, участвую в профессиональных конференциях и семинарах.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Услуги и цены</h2>
+            
+            <div class="price-table">
+                <h3>Индивидуальные консультации</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Услуга</th>
+                            <th>Длительность</th>
+                            <th>Цена</th>
+                            <th>Описание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Первичная консультация</td>
+                            <td>60 мин</td>
+                            <td>3000 ₽</td>
+                            <td>Знакомство, диагностика, план работы</td>
+                        </tr>
+                        <tr>
+                            <td>Индивидуальная сессия</td>
+                            <td>50 мин</td>
+                            <td>2500 ₽</td>
+                            <td>Работа с личными запросами</td>
+                        </tr>
+                        <tr>
+                            <td>Онлайн консультация</td>
+                            <td>50 мин</td>
+                            <td>2000 ₽</td>
+                            <td>Удаленная работа по видеосвязи</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="price-table">
+                <h3>Семейная и парная терапия</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Услуга</th>
+                            <th>Длительность</th>
+                            <th>Цена</th>
+                            <th>Описание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Семейная консультация</td>
+                            <td>60 мин</td>
+                            <td>4000 ₽</td>
+                            <td>Работа с семейными конфликтами</td>
+                        </tr>
+                        <tr>
+                            <td>Парная терапия</td>
+                            <td>60 мин</td>
+                            <td>3500 ₽</td>
+                            <td>Работа с отношениями в паре</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="price-table">
+                <h3>Групповые программы</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Услуга</th>
+                            <th>Длительность</th>
+                            <th>Цена</th>
+                            <th>Описание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Группа по работе с тревогой</td>
+                            <td>90 мин</td>
+                            <td>1500 ₽</td>
+                            <td>Групповая работа с тревожными состояниями</td>
+                        </tr>
+                        <tr>
+                            <td>Тренинг личностного роста</td>
+                            <td>120 мин</td>
+                            <td>2000 ₽</td>
+                            <td>Развитие самосознания и навыков</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>Отзывы клиентов</h2>
+            <div class="review-slider">
+                <div class="review-slide active">
+                    <p>"Работа с Надеждой помогла мне справиться с паническими атаками. Очень профессиональный и деликатный подход. Рекомендую!"</p>
+                    <cite>— Анна, 28 лет</cite>
+                </div>
+                
+                <div class="review-slide">
+                    <p>"Семейная терапия спасла наш брак. Надежда помогла нам найти общий язык и восстановить доверие друг к другу."</p>
+                    <cite>— Михаил и Елена</cite>
+                </div>
+                
+                <div class="review-slide">
+                    <p>"Благодаря работе с психологом я научилась лучше понимать себя и свои эмоции. Очень благодарна за поддержку!"</p>
+                    <cite>— Мария, 35 лет</cite>
+                </div>
+                
+                <div class="review-buttons">
+                    <button id="prevReview">‹</button>
+                    <button id="nextReview">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Часто задаваемые вопросы</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Как проходит первая консультация?</div>
+                <div class="faq-answer">
+                    <p>Первая встреча длится 60 минут. Мы знакомимся, обсуждаем ваш запрос, я провожу диагностику и мы составляем план дальнейшей работы. Это безопасное пространство, где вы можете открыто говорить о своих переживаниях.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Сколько сессий потребуется?</div>
+                <div class="faq-answer">
+                    <p>Количество сессий индивидуально и зависит от сложности запроса. Обычно краткосрочная работа составляет 8-12 встреч, долгосрочная терапия может длиться год и более. Мы обсуждаем это на первой консультации.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Возможны ли онлайн консультации?</div>
+                <div class="faq-answer">
+                    <p>Да, я провожу онлайн консультации через защищенные платформы видеосвязи. Эффективность онлайн терапии доказана исследованиями и практически не отличается от очных встреч.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Конфиденциальность гарантирована?</div>
+                <div class="faq-answer">
+                    <p>Абсолютно. Все, что происходит на сессиях, остается строго конфиденциальным. Это основной принцип работы психолога, закрепленный в этическом кодексе.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p><i class="fas fa-phone"></i> <a href="tel:+79123456789">+7 (912) 345-67-89</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:nadezhda@example.com">nadezhda@example.com</a></p>
+            <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Примерная, д. 10</p>
+            <p><i class="fas fa-clock"></i> Пн-Пт: 9:00-20:00, Сб: 10:00-16:00</p>
+            <br>
+            <a href="tel:+79123456789" class="cta-button">Позвонить сейчас</a>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-layout">
+                <p>&copy; 2024 Надежда - Психолог. Все права защищены.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
