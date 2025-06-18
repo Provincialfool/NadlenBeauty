@@ -1,8 +1,18 @@
 // Прелоадер
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
   const preloader = document.getElementById('preloader');
-  preloader.style.display = 'none';
+  preloader.classList.add('fade-out');
+  preloader.addEventListener('transitionend', () => preloader.remove());
+  requestAnimationFrame(() => startParticles());
 });
+
+function startParticles() {
+  // Инициализация анимаций частиц если необходимо
+  const particles = document.querySelectorAll('.particle');
+  particles.forEach((particle, index) => {
+    particle.style.animationDelay = `${index * 0.5}s`;
+  });
+}
 
 // Плавная прокрутка
 document.querySelectorAll('nav a').forEach(anchor => {
