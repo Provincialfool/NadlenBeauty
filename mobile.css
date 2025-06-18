@@ -1,0 +1,86 @@
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    color: #412A22;
+    margin: 0 auto;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  /* Единая кнопка контакта: на мобильных скрываем текст номера */
+  .phone-button .phone-text {
+    display: none;
+  }
+
+  /* Скрываем текст логотипа, оставляем только картинку */
+  .logo h1,
+  .logo p {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .price-table {
+    overflow-x: auto;
+  }
+  
+  .price-table table {
+    font-size: 12px;
+  }
+
+  .review-slider {
+    padding: 0 10px;
+  }
+
+  .contacts .cta-button {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .footer-layout {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

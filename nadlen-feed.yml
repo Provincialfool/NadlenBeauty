@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2025-03-07 14:22">
+  <shop>
+    <name>Nadlen Studio</name>
+    <company>Nadlen Studio</company>
+    <url>https://nadlen-studio.ru</url>
+    <currencies>
+      <currency id="RUB" rate="1"/>
+    </currencies>
+    <categories>
+      <category id="1">Уход за лицом</category>
+      <category id="2">Маски</category>
+      <category id="3">Пилинги</category>
+    </categories>
+    <offers>
+      <!-- Уход за лицом -->
+      <offer id="1" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>1800</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>1</categoryId>
+        <name>Комбинированная чистка лица</name>
+        <description>Продолжительность: 90 мин</description>
+      </offer>
+      <offer id="2" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>1000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>1</categoryId>
+        <name>Ультразвуковая чистка лица</name>
+        <description>Продолжительность: 40 мин</description>
+      </offer>
+      <offer id="3" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>1600</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>1</categoryId>
+        <name>Механическая чистка лица</name>
+        <description>Продолжительность: 30 мин</description>
+      </offer>
+
+      <!-- Маски -->
+      <offer id="4" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>600</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>2</categoryId>
+        <name>Альгинатная маска</name>
+        <description>Продолжительность: 30 мин</description>
+      </offer>
+      <offer id="5" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>350</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>2</categoryId>
+        <name>Химическая маска</name>
+        <description>Продолжительность: 60 мин</description>
+      </offer>
+      <offer id="6" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>600</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>2</categoryId>
+        <name>Маска с глиной под токи кожи</name>
+        <description>Продолжительность: 15 мин</description>
+      </offer>
+      <offer id="7" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>800</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>2</categoryId>
+        <name>Пилинговая маска</name>
+        <description>Продолжительность: 20 мин</description>
+      </offer>
+
+      <!-- Пилинги -->
+      <offer id="8" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>1500</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>3</categoryId>
+        <name>Кислотный пилинг</name>
+      </offer>
+      <offer id="9" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>450</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>3</categoryId>
+        <name>Энзимный пилинг</name>
+      </offer>
+      <offer id="10" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>1500</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>3</categoryId>
+        <name>Миндальный кислотный пилинг</name>
+      </offer>
+      <offer id="11" available="true">
+        <url>https://nadlen-studio.ru</url>
+        <price>1500</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>3</categoryId>
+        <name>Молочный кислотный пилинг</name>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>
